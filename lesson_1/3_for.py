@@ -29,9 +29,9 @@ def main():
         for item in klass['scores']:
             scores.append(item)
 
-        print(f"{klass['school_class']}: {sum(klass['scores'])}")
+        print(f"{klass['school_class']}: {sum(klass['scores']) / len(klass['scores'])}")
 
-    print(f"Total: {sum(scores)}")
+    print(f"Total: {sum(scores) / len(scores)}")
 
 if __name__ == "__main__":
     main()
