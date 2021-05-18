@@ -25,7 +25,7 @@ def main():
             data = file.read()
 
         print('длина строки:', len(data))
-        print('количество слов:', len(re.findall(r'[-А-Яа-я]+', data)))
+        print('количество слов:', len(re.findall(r'[-А-Яа-яA-Za-z]+', data)))
 
         with open('tmp/referat2.txt', 'w', encoding='utf-8') as f:
             f.write(data.replace('.', '!'))
